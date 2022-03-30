@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>touch Event</h1>
+<p touchstart = "demo1()"> Touch Event occurs when the user touches an element</p>
+<p touchend = "demo2()"> Touch Event occurs when the user removes the finger from an element</p>
+<p touchcancel = "demo3()"> Touch Event occurs when the touch event gets interrupted.</p>
+<p touchmove = "demo4()"> Touch Event occurs when the user moves the finger across the screen</p>
+
+<p><strong>Note:</strong> This example is for touch devices only.</p>
+
+<p id="demo"></p>
+
+<script>
+function demo1() {
+  document.getElementById("demo").innerHTML = "Touch start";
+}
+function demo2() {
+  document.getElementById("demo").innerHTML = "Touch end";
+}
+function demo3() {
+  document.getElementById("demo").innerHTML = "Touch cancel";
+}
+function demo4() {
+  document.getElementById("demo").innerHTML = "Touch move";
+}
+</script>
+</body>
+</html>

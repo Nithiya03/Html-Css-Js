@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    body{
+      color: green;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 30px;
+      font-style: italic;
+    }
+  </style>
+  
+</head>
+<body>
+  <button onclick="getName()" type="button" >GetName</button>
+  <p id ="id1"> </p>
+<script>
+function getName(){
+
+  localStorage.setItem("name","Nithiya");
+   document.getElementById("id1").innerHTML=localStorage.getItem("name");
+}
+</script>
+</body>
+</html>

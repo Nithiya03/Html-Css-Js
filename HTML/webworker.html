@@ -1,0 +1,22 @@
+
+<!doctype >
+<html>
+    <head> 
+        <h1>Web Workers</h1>
+        <script>
+            function loop1(){
+                    var worker= new Worker("loop1.js");
+                    worker.onmessage = function(event){
+                        alert("Completed "+ event.data +" iteration");
+                    }
+            }
+            function loop2(){
+                alert("Hello");
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button"  onclick="loop1()" value="loop1"/>
+        <input type="button"  onclick="loop2()" value="loop2"/>
+    </body>
+</html>
