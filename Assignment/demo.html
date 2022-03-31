@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        .hec {
+            background-color: lavender;
+            border: 2px solid black;
+            margin-left: 300px;
+            margin-right: 300px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        button:hover {
+
+            background-color: gray;
+
+        }
+
+        .demo1 {
+            margin: auto;
+            border: 2px solid gray;
+            width: 1250px;
+            height: 650px;
+        }
+        h1 {
+            text-align: center;
+
+        }
+        .right,.about,.career,.team  {
+            float: left;
+            margin-left: 20px;
+
+        }
+        aside {
+            width: 400px;
+            height: 500px;
+            border: 1px solid black;
+            float: right;
+            background-color: grey;
+            overflow: scroll;
+            margin: 20px 20px 50px 20px;
+        }
+
+        section {
+            width: 700px;
+            height: 80px;
+            float: left;
+            padding: 20px;
+        }
+
+        
+        #img1{
+            position: relative;
+            top: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="hec">
+        <h1>WEB HOUSE</h1>
+
+        <div class="right"><button onclick="parentColor(this)"                                                        
+            class="right" target="_self"><b>Home</b></button></div>
+       
+        <div class="about"><button onmouseover="parentColor(this)" onmouseout="normalColor(this)"
+                class="about" onclick=""><b><a href="scroll.html" >about us</b></a></button></div>
+
+        <div class="career"><button onmouseover="parentColor(this)" onmouseout="normalColor(this)"
+                class="career"><b>career</b></button></div>
+                
+                <div class="team"><button onmouseover="parentColor(this)" onmouseout="normalColor(this)"
+                    class="team"><b><a href="team.html" >team</b></a></button></div>
+    </div>
+    <br>
+    <div class="demo1">
+
+        <h1>Welcome</h1>
+
+        <section>
+            <h2>History of web</h2>
+            <p>In 1990, Tim Berners-Lee developed the foundation for the
+                Web- HTTP, HTML, a browser, a server, and the first website in
+                order to manage documentation at CERN.[2] [4]
+
+                While the Web was a success at CERN, it was not very
+                popular elsewhere. In two years, there were only 50
+                websites.[5]
+
+                After the NCSA released Mosaic, a graphical browser that
+                could display inline images[6] and submit forms,[7] and
+                HTTPd, a server that could process forms (see CGI), the
+                Web became very popular with thousands of websites
+                springing up in less than a year.[8]
+
+                In 1994, Marc Andreessen and Jim Clark founded Netscape
+                and released Navigator which introduced Java and
+                Javascript to the Web. It quickly became the dominant
+                browser. In 1995, Netscape had a very successful IPO which
+                triggered a frenzy for the Web and started the dot-com
+                bubble.[9]
+
+                Microsoft responded by developing their own browser,
+                Internet Explorer. By bundling it with Windows, it became
+                the dominant browser for 14 years.[10]
+
+                Tim Berners-Lee founded the World Wide Web Consortium
+                (W3C) which created XML in 1996 and recommended replacing
+                HTML with stricter XHTML.[11]
+
+                In the meantime, developers began exploiting an IE feature
+                called XMLHttpRequest to make Ajax applications and
+                launched the Web 2.0 revolution.
+
+                Mozilla, Opera, and Apple rejected XHTML and created the
+                WHATWG which developed HTML5.[12]
+
+                In 2009, the W3C conceded and abandoned XHTML[13] and in
+                2019, ceded control of the HTML specification to the
+                WHATWG.[14] </p>
+        </section>
+
+        <aside>
+            <h2>Accessibility</h2>
+            <p>There are methods for accessing the Web in alternative
+                mediums and formats to facilitate use by individuals with
+                disabilities.
+                These disabilities may be visual, auditory, physical,
+                speech-related, cognitive, neurological, or some
+                combination.
+                Accessibility features also help people with temporary
+                disabilities, like a broken arm, or ageing users as their
+                abilities change.
+                The Web receives information as well as providing
+                information and interacting with society. The World Wide
+                Web Consortium claims that it
+                is essential that the Web be accessible, so it can provide
+                equal access and equal opportunity to people with
+                disabilities.
+                Tim Berners-Lee once noted, "T console.log(parent); or may
+                not be using assistive technology.When a web page asks
+                for, and the user supplies, personally
+                identifiable information—such as their real name, address,
+                e-mail address, etc. web-based entities can associate
+                current web traffic
+                with that individual. If the website uses HTTP cookies,
+                username, and password authentication, or other tracking
+                techniques, it can
+                relate other web visits, before and after, to the
+                identifiable information provided. In this way, a
+                web-based organization can develop and
+                build a profile of the individual people who use its site
+                or sites. It may be able to build a record for an
+                individual that includes
+                information about their leisure activities, their shopping
+                interests, their profession, and other aspects of their
+                demographic profile.
+                These profiles are of potential interest to marketers,
+                advertisers, and others. Depending on the website's terms
+                and conditions and the
+                local laws that apply information from these profiles may
+                be sold, shared, or passed to other organizations without
+                the user being informed.
+                For many ordinary people, this means little more than some
+                unexpected e-mails in their in-box or some uncannily
+                relevant advertising on a
+                future web page. For others, it can mean that time spent
+                indulging an unusual interest can result in a deluge of
+                further targeted
+                marketing that may be unwelcome. Law enforcement,
+                counter-terrorism, and espionage agencies can also
+                identify, target, and track
+                individuals based on their interests or proclivities on
+                the Web. </p>
+        </aside>
+        <a href="demo1.html" id="img1">
+            <img src="user.png" alt="my picture" height="128" width="128" />
+        </a>
+    </div>
+    <script>
+        function parentColor(x) {
+            parent = x.parentNode;
+            parent1 = parent.parentNode;
+            parent1.style.backgroundColor = "LightGray";
+        }
+        function normalColor(x) {
+            parent = x.parentNode;
+            parent1 = parent.parentNode;
+            parent1.style.backgroundColor = "lightBlue";
+        }
+
+    </script>
+</body>
+
+</html>
