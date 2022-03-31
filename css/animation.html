@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1>CSS animation</h1>
+<style>
+#text {
+  border-radius: 25px;
+  border: 5px solid black;
+  padding: 20px; 
+  width: 500px;
+  height: 100px;  
+}
+b {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: moveText;
+  animation-duration: 4s;
+}
+body{
+  background-color: #fff0e9;
+}
+h1{
+  text-align: center;
+}
+h3{
+  color: hotpink;
+}
+@keyframes moveText {
+	0%{left:0px; }
+    25%{left:350px; }
+    50%{left:350px; }
+    100%{left:0px; }
+}
+</style>
+</head>
+<body>
+  <h3>Create an user interface to move the text from left to right and vice versa inside the rectangle frame by using CSS animation properties.</h3>
+  <h2 id="text"><b>Aspire Systems</b></h2>
+
+</body>
