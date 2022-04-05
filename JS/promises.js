@@ -1,8 +1,10 @@
 var promise = new Promise(function(resolve, reject) {
     const string1 = "Nithiya";
-
-    if(string1 === "ma") {
-        resolve();
+    setTimeout(() => {
+        console.log("Hi");
+    }, 6000);
+    if(string1 == "Nithiya") {
+        resolve();       
     } else {
         reject();
     }
